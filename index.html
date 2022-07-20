@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Page structure" />
+  <meta name="keywords" content="anarcocapitalismo, ancap, aplicação web, branding, coreteam, css, cyberpunk, cypxerpunk, desenvolvimento de aplicativo, desenvolvimento de app, desenvolvimento de loja virtual, desenvolvimento de site, desenvolvimento de software, desenvolvimento web, engenharia de software, experiencia de usuario, funil de vendas, golang, html, interface de usuario, javascript, marketing digital, next.js, react, robson niemeyer" />
+  <meta name="author" content="Robson Niemeyer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coreteam</title>
+  <link rel="shortcut icon" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="box-shadow">
+    <nav class="flex-container">
+      <img class="background-gradient" src="images/logo-invert.png" height="24" width="24" alt="Logotipo" />
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="text-shadow">Coreteam</h1>
+      <p class="font-large font-light letter-spaced">Desenvolvimento Web e Marketing Digital</p>
+      <div class="horizontal-line background-gradient box-shadow margin-vertical-medium"></div>
+      <p>
+        <!-- Nós ajudamos empreendedores visionários a escalarem seus negócios com segurança e agilidade através do desenvolvimento de sites modernos, aplicações web de alto desempenho, gestão de tráfego, e-mail marketing e automatização e otimização de processos digitais. -->
+        Nós ajudamos você a vender mais e fidelizar clientes através do desenvolvimento de sites modernos e gestão de anúncios no Instagram e Google Ads.
+      </p>
+      <button type="button" id="show-modal" class="box-shadow font-bold margin-top-large padding-small rounded-smaller width-100 width-auto-tablet">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z" /></svg>
+        <span class="letter-spaced">Quero uma consultoria gratuita!</span>
+      </button>
+      <!-- Modal -->
+      <div id="modal">
+        <div class="box-shadow background-gradient modal-container rounded-small">
+          <div class="modal-header rounded-top-small">
+            <span id="hide-modal" class="close padding-top-smaller padding-right-small" title="Fechar">&times;</span>
+            <div>
+              <h3 id="modal-title" class="font-bold padding-medium text-center text-shadow">Consultoria gratuita</h3>
+            </div>
+          </div>
+          <div class="horizontal-line"></div>
+          <div id="modal-body" class="modal-body padding-medium">
+            <form id="form" action="https://script.google.com/macros/s/AKfycbwAA2TlcHUR853YX5HN0oWqJO50Zg0cnc5YPPvk8LEHF3ctmr-mMgrzkTIep1d06HM/exec" method="post">
+              <label for="name" hidden>Nome</label>
+              <input type="text" name="name" id="name" class="padding-small rounded-smaller width-100" placeholder="Digite seu nome" maxlength="70" required>
+              <label for="email" hidden>E-mail</label>
+              <input type="email" name="email" id="email" class="margin-top-small padding-small rounded-smaller width-100" placeholder="Seu melhor e-mail" maxlength="70" required>
+              <label for="phone" hidden>Telefone</label>
+              <input type="text" name="phone" id="phone" class="margin-top-small padding-small rounded-smaller width-100" placeholder="Seu WhatsApp com DDD" maxlength="15" pattern=".{15}" inputmode="numeric" autocomplete="off" required>
+              <div id="alert" class="alert box-shadow font-bold margin-top-small padding-small rounded-smaller hidden"></div>
+              <button type="submit" class="box-shadow font-bold margin-top-small padding-small rounded-smaller width-100">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z" /></svg>
+                <span class="letter-spaced">Enviar</span>
+              </button>
+            </form>
+          </div>
+          <div class="horizontal-line"></div>
+          <div id="modal-footer" class="modal-footer padding-medium rounded-bottom-small">
+            <p id="modal-footnote" class="text-center font-small">Nós protegemos a sua privacidade! Nunca fazemos spam nem compartilhamos seus dados pessoais com terceiros.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+    </div>
+  </main>
+  <footer>
+    <div class="flex-container flex-between row">
+      <div class="col width-100">
+        <p class="font-light text-center text-left-tablet font-small">Coreteam, 2022</p>
+      </div>
+      <div class="col width-100">
+        <p class="font-light text-center text-left-tablet font-small">Petrópolis, Rio de Janeiro, Brasil</p>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/script.js" defer></script>
+</body>
+</html>
